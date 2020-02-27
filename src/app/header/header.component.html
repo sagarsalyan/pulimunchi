@@ -1,0 +1,40 @@
+
+<div class="header">
+  <div class="title">
+    <span>Pulimunchi</span>
+  </div>
+
+  <div class="menu" [ngStyle]="isVisible">
+    <ul>
+      <li><a routerLink="/home" routerLinkActive="active">Home</a><span class="border"></span></li>
+      <li><a routerLink="/restaurant" routerLinkActive="active">Search</a><span class="border"></span></li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a><span class="border"></span></li>
+      <li><a routerLink="/contactus" routerLinkActive="active">Contact Us</a><span class="border"></span></li>
+      <li class="user" (mouseout)="onUserMouseOut()">
+        <span class="border"></span>
+        <span class="user-title" (click)="onUserClick()"><img [src]="userIcon"/>Sagar</span>
+        <ul class = "user-menu" [class.menu-expanded]="userAction" (mouseout)="onUserMouseOut()" (mouseover)="onUserMouseOver()">
+          <li (click)="onRoute('myprofile')">My Profile<i class="fa fa-user" aria-hidden="true"></i></li>
+          <li (click)="onRoute('mycart')">My Cart<i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+          <li (click)="onRoute('myorders')">My Orders<i class="fa fa-cutlery" aria-hidden="true"></i></li>
+          <li>Log out<i class="fa fa-sign-out" aria-hidden="true"></i></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-mbl">
+    <span class="menu-icon" (click)="onMenuClick()"><i class="fa fa-bars"></i></span>
+    <div class="side-menu" [ngStyle]="isVisibleObj">
+      <ul>
+        <li><span></span>Home</li>
+        <li><span></span>Search</li>
+        <li><span></span>My Cart</li>
+        <li><span></span>My Order</li>
+        <li><span></span>My Profile</li>
+        <li><span></span>About Us</li>
+        <li><span></span>Contact Us</li>
+        <li><span></span>Log out</li>
+      </ul>
+    </div>
+  </div>
+</div>
