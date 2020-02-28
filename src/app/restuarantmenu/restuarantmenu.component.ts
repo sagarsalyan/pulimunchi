@@ -7,7 +7,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class RestuarantmenuComponent implements OnInit {
 
-   @ViewChild('menubar', { read: ElementRef }) public menubar: ElementRef<any>;
+   @ViewChild('menubar', { read: ElementRef } as any) public menubar: ElementRef<any>;
   constructor() { }
 
   ngOnInit() {

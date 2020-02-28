@@ -33,7 +33,10 @@
   width: 20%;
 }
 .header .title{
-  font-size: 250%;
+  font-size: 350%;
+}
+.header .address{
+  font-size: 150%;
 }
 .cart{
   width: 30%;
@@ -177,4 +180,5 @@
 .food > .foodbtn > .foodbtngrp > input{
   width: 40%;
   text-align: center;
+  outline: none;
 }
