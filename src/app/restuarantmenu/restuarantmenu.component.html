@@ -10,24 +10,33 @@
         </div>
       </div>
       <div class="menu">
-        <div class="menuleft"><button type="button" name="button"><i class="fa fa-chevron-left"></i></button></div>
-        <div class="menubar">
+        <div class="menuleft"><button class="menuleftbtn" type="button" name="button" (click)="onMenuLeft()"><i class="fa fa-chevron-left"></i></button></div>
+        <div class="menubar" #menubar>
           <ul>
             <li>Meals</li>
+            <li class = "separator"><i></i></li>
             <li>Breakfast</li>
+            <li class = "separator"><i></i></li>
             <li>Chinese</li>
+            <li class = "separator"><i></i></li>
             <li>Pizza</li>
+            <li class = "separator"><i></i></li>
             <li>Special</li>
+            <li class = "separator"><i></i></li>
             <li>Biryani</li>
+            <li class = "separator"><i></i></li>
             <li>Fried Rice</li>
+            <li class = "separator"><i></i></li>
             <li>Dessert</li>
           </ul>
-
         </div>
-        <div class="menuright"><button type="button" name="button"><i class="fa fa-chevron-right"></i></button></div>
+        <div class="menuright"><button class="menurightbtn" type="button" name="button" (click)="onMenuRight()"><i class="fa fa-chevron-right"></i></button></div>
         <div class="searchbar">
-          Search
+          <input type="text" name="" value=""><button type="button" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
         </div>
+      </div>
+      <div class="food">
+        food
       </div>
     </div>
     <div class="cart">

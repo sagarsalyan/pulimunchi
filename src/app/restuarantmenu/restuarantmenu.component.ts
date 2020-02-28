@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-restuarantmenu',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestuarantmenuComponent implements OnInit {
 
+   @ViewChild('menubar', { read: ElementRef }) public menubar: ElementRef<any>;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onMenuLeft(){
+    this.menubar.nativeElement.scrollTo({ left: (this.menubar.nativeElement.scrollLeft - 150), behavior: 'smooth' })
+  }
+  onMenuRight(){
+    this.menubar.nativeElement.scrollTo({ left: (this.menubar.nativeElement.scrollLeft + 150), behavior: 'smooth' })
   }
 
 }
