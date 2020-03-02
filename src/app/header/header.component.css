@@ -5,6 +5,9 @@
   padding:7px 10px 7px;
   overflow: visible;
   height: auto;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 .header > div {
   display: inline-block;
@@ -87,6 +90,9 @@
 }
 .active {
   width: 100%;
+}
+.spacer{
+  height: 63px;
 }
 
 
