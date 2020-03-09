@@ -17,6 +17,8 @@ import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { RestuarantmenuComponent } from './restuarantmenu/restuarantmenu.component';
+import { PaymentComponent } from './payment/payment.component';
+import { AddressComponent } from './address/address.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { RestuarantmenuComponent } from './restuarantmenu/restuarantmenu.compone
     AdminComponent,
     UserComponent,
     RestaurantComponent,
-    RestuarantmenuComponent
+    RestuarantmenuComponent,
+    PaymentComponent,
+    AddressComponent
   ],
   imports: [
     BrowserModule,
