@@ -11,6 +11,8 @@ import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { RestuarantmenuComponent } from './restuarantmenu/restuarantmenu.component';
+import { PaymentComponent } from './payment/payment.component';
+import { AddressComponent } from './address/address.component';
 
 
 const routes: Routes = [
@@ -32,7 +34,9 @@ const routes: Routes = [
     {path:'contactus',component:ContactusComponent},
     {path:'myorders',component:MyordersComponent},
     {path:'mycart',component:MycartComponent},
-    {path:'myprofile',component:MyprofileComponent}
+    {path:'myprofile',component:MyprofileComponent},
+    {path:'address',component:AddressComponent},
+    {path:'payment',component:PaymentComponent}
   ]},
   {path:'**',component:PagenotfoundComponent}
 ];
@@ -43,4 +47,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [HomeComponent,AboutComponent,RestaurantComponent,RestuarantmenuComponent,ContactusComponent,MyordersComponent,MycartComponent,MyprofileComponent,AdminComponent,UserComponent,PagenotfoundComponent];
+export const routingComponents = [HomeComponent,AboutComponent,RestaurantComponent,RestuarantmenuComponent,ContactusComponent,MyordersComponent,MycartComponent,MyprofileComponent,AddressComponent,PaymentComponent,AdminComponent,UserComponent,PagenotfoundComponent];
